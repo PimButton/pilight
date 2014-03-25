@@ -114,6 +114,11 @@ if(${PROTOCOL_KAKU_DIMMER} MATCHES "OFF")
 	list(REMOVE_ITEM pilight "${PROJECT_SOURCE_DIR}/libs/protocols/arctech_dimmer.c")
 endif()
 
+if(${PROTOCOL_PIRMOTION} MATCHES "OFF")
+    list(REMOVE_ITEM pilight_headers "${PROJECT_SOURCE_DIR}/libs/protocols/pirmotion.h")
+    list(REMOVE_ITEM pilight "${PROJECT_SOURCE_DIR}/libs/protocols/pirmotion.c")
+endif()
+
 if(${PROTOCOL_KAKU_SCREEN} MATCHES "OFF")
 	list(REMOVE_ITEM pilight_headers "${PROJECT_SOURCE_DIR}/libs/protocols/arctech_screen.h")
 	list(REMOVE_ITEM pilight "${PROJECT_SOURCE_DIR}/libs/protocols/arctech_screen.c")
