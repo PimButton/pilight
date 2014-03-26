@@ -186,7 +186,7 @@ void pirmotionInit(void) {
 	protocol_register(&pirmotion);
 	protocol_set_id(pirmotion, "pirmotion");
 	protocol_device_add(pirmotion, "pirmotion", "pirmotion Switches");
-	protocol_plslen_add(pirmotion, 494); // 16796 / 3 = 494
+	protocol_plslen_add(pirmotion, 494); // 16796 / 34 = 494
 	pirmotion->devtype = SWITCH;
 	pirmotion->hwtype = RF433;
 	pirmotion->pulse = 4;

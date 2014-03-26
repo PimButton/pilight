@@ -249,7 +249,7 @@ void protocol_init(void) {
 #ifdef PROTOCOL_PROGRAM
 	programInit();
 #endif
-#ifdef PROTOCOL_PIRMOTION_SWITCH
+#ifdef PROTOCOL_PIRMOTION
    pirmotionInit();
 #endif
 }
